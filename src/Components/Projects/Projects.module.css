@@ -1,0 +1,303 @@
+.bg {
+  border-top: 1px solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100%;
+}
+
+.span6 {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.span6 h2{
+  letter-spacing: 15px;
+  font-family: var(--bebas);
+  font-size: 2.5rem;
+  font-weight: bold;
+  /* color: rgba(34, 34, 34, 0.803); */
+  text-shadow: 1px 1px 1px black;
+  margin: 1rem 0 0 0;
+}
+
+.gridIcons {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.imgCard {
+  width: 50rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1.5rem;
+}
+
+.img {
+  width: 45rem;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 4rem;
+  gap: 2rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.text h4 {
+  font-size: 25px;
+  text-align: center;
+  font-family: var(--bebas);
+  letter-spacing: 5px;
+}
+
+.text h5 {
+  font-size: 20px;
+}
+
+.text ul {
+  font-size: 15px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.text li {
+  list-style: circle;
+  margin: 0.3rem;
+  
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.aboutConteiner {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.aboutSectionContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.aboutSectionImg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.navlink {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  text-align: start;
+  transition: all 0.1s;
+  
+  font-weight: 550;
+  font-family: var(--bebas);
+  letter-spacing: 8px;
+  line-height: -15px;
+}
+
+.navlink:hover {
+  transform: translate(0%) scale(1.1);
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btnPag {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+}
+
+.btnPag > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 25px;
+  transition: all 0.4s ease-in;
+}
+
+.btnPag:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+}
+
+.btnPag:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+}
+
+.sliderFrame {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0;
+  overflow: hidden;
+}
+
+.sliderFrame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.sliderFrame li {
+  width: 25%;
+  height: 100%;
+  list-style: none;
+}
+
+.sliderFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/* Responsive styles for iPhone */
+@media (max-width: 1023px) {
+  .span6 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .imgCard {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .gridIcons{
+    margin: 2rem ;
+
+  }
+  /* .gridIcons li{
+    margin: 0 7rem;
+    font-size: 15px;
+
+  } */
+  .gridIcons ul{
+    margin: 1rem 0
+
+  }
+  .gridIcons .icons{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Styles for Computer */
+@media (min-width: 1024px) {
+  .span6 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    
+  }
+
+  .imgCard {
+    width: 40rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 4rem;
+  }
+
+  .aboutConteiner {
+    justify-content: flex-start;
+  }
+
+  .aboutSectionContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+

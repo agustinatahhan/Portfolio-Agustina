@@ -1,0 +1,50 @@
+.special{
+    position: relative;
+    width: 100%;
+    height: 10rem;
+}
+.special::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url(../../assets/keyboard.jpg); */
+    background: var(--ivory);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.textContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  
+.textContent.full {
+    grid-column: span 12;
+  }
+  
+  .textContent.full h2,
+  .textContent.full h3{
+      /* text-transform: uppercase; */
+      text-align: center;
+  }
+  
+  .textContent.full h2{
+      font-size: 30px;
+      letter-spacing: 15px;
+      line-height: 1.5;
+      font-weight: 200;
+  
+  }

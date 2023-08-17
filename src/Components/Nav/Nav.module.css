@@ -1,0 +1,189 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  height: 100%;
+}
+
+.containerCenter {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: var(--grey);
+  z-index: 3;
+}
+
+nav .grid {
+  justify-items: flex-end;
+  align-items: center;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-column: 12;
+}
+
+.enlaces {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.enlaces a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.enlaces a:hover {
+  background-color: #ddd;
+}
+
+.iconMenu {
+  --gap: 5px;
+  --height-bar: 2.5px;
+  --pos-y-bar-one: 0;
+  --pos-y-bar-three: 0;
+  --scale-bar: 1;
+  --rotate-bar-one: 0;
+  --rotate-bar-three: 0;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  cursor: pointer;
+  position: relative;
+}
+
+.bar {
+  position: relative;
+  height: var(--height-bar);
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.bar1 {
+  top: var(--pos-y-bar-one);
+  transform: rotate(var(--rotate-bar-one));
+  transition: top 200ms 100ms, transform 100ms;
+}
+
+.bar2 {
+  transform: scaleX(var(--scale-bar));
+  transition: transform 150ms 100ms;
+}
+
+.bar3 {
+  bottom: var(--pos-y-bar-three);
+  transform: rotate(var(--rotate-bar-three));
+  transition: bottom 200ms 100ms, transform 100ms;
+}
+
+/* Estilos para el ícono del menú cuando está marcado */
+input.checkIcon:checked + label.iconMenu > .bar1 {
+  transition: top 200ms, transform 200ms 100ms;
+}
+
+input.checkIcon:checked + label.iconMenu > .bar3 {
+  transition: bottom 200ms, transform 200ms 100ms;
+}
+
+input.checkIcon:checked + label.iconMenu {
+  --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+  --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+  --scale-bar: 0;
+  --rotate-bar-one: 45deg;
+  --rotate-bar-three: -45deg;
+}
+.checkIcon:checked + label.iconMenu + .enlaces {
+  display: flex; /* Mostrar el menú cuando el botón está marcado */
+}
+.languageMenu {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.languageButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  position: relative;
+}
+
+.languageButton svg {
+  margin-right: 8px;
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.languageDropdown {
+  position: absolute;
+  top: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.languageDropdown li {
+  padding: 4px 8px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.languageDropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+.btnLng {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .enlaces {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 100%;
+    right: 3%;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+}

@@ -1,0 +1,96 @@
+.bg{
+  border-top: 1px solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100%;
+}
+
+.span6 {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+  width: 50rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  color: black;
+  gap: 1rem;
+}
+
+.card h3{
+    font-size: 40px;
+    letter-spacing: 4px
+}
+
+.card h4{
+    font-size: 20px;
+}
+
+.img {
+  width: 50rem;
+  height: 30rem;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 1px solid black;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .btnPag {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+  }
+  
+  .btnPag > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+    transition: all 0.4s ease-in;
+  }
+  
+  .btnPag:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+  }
+  
+  .btnPag:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+  }

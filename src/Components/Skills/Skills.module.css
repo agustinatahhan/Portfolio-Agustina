@@ -1,0 +1,243 @@
+.bg{
+  border-top: 1px solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 100%;
+}
+
+.span6 {
+  grid-column: span 12;
+  align-self: center;
+  justify-self: center;
+  letter-spacing: 2px;
+}
+
+.grid h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  align-self: self-start;
+  justify-self: center;
+  grid-column: 6 / 8;
+  margin-bottom: -5rem;
+  letter-spacing: 15px;
+  font-family: var(--bebas);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  
+}
+
+.gridIcons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -2rem;
+  align-self: self-start;
+}
+
+.bg h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.card {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid var(--darkGrey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
+
+.imgJs {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+}
+
+.myCard {
+  background-color: transparent;
+  width: 150px;
+  height: 200px;
+  perspective: 1000px;
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid var(--darkGrey);
+  border-radius: 50%;
+  --border-radius: 50%;
+  --border-width: 4px;
+  appearance: none;
+  position: relative;
+  padding: 1em 2em;
+  border: 0;
+  z-index: 2;
+}
+.myCard:after {
+  --m-i: linear-gradient(#000, #000);
+  --m-o: content-box, padding-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: var(--border-width);
+  border-radius: var(--border-radius);
+ background-image: conic-gradient(
+    #c2e0ff, /* Azul pastel */
+    #b8f6e3, /* Verde pastel */
+    #fff3b5, /* Amarillo pastel */
+    #ffcfa6, /* Naranja pastel */
+    #f7a9d8, /* Rosa pastel */
+    #b3a8f0, /* Lila pastel */
+    #c2e0ff  /* Azul pastel (repetido para cerrar el ciclo) */
+);
+  -webkit-mask-image: var(--m-i), var(--m-i);
+  mask-image: var(--m-i), var(--m-i);
+  -webkit-mask-origin: var(--m-o);
+  mask-origin: var(--m-o);
+  -webkit-mask-clip: var(--m-o);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  filter: hue-rotate(0);
+  animation: rotate-hue linear 500ms infinite;
+  animation-play-state: paused;
+}
+
+.myCard:hover::after {
+  animation-play-state: running;
+}
+
+@keyframes rotate-hue {
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+.myCard,
+.myCard::after {
+  box-sizing: border-box;
+}
+
+.myCard:active {
+  --border-width: 5px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  color: black;
+  z-index: 1;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Estilos específicos para pantallas más pequeñas, como iPhone */
+@media (max-width: 767px) {
+  .grid h2 {
+    font-size: 28px;
+    margin-bottom: 0; /* Eliminar el margen inferior */
+    grid-column: 1 / 13; /* Ocupar todo el ancho del grid */
+  }
+
+  .gridIcons {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0; /* Eliminar el margen superior */
+    gap: 1rem; /* Reducir el espacio entre los íconos */
+  }
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+  .grid h2 {
+    font-size: 40px;
+    align-self: flex-start;
+  }
+
+  .gridIcons {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    
+  }
+}
+
