@@ -29,7 +29,7 @@ const About = () => {
             className={`${style.textContent} ${style.lateral}`}
             data-aos="fade-left"
           >
-            {/* <h3>About me</h3>
+            <h3>About me</h3>
             <p>
               I'm Agustina, a Full Stack Developer recently graduated from
               Henry's Bootcamp. I graduated as a dentist but soon realized it
@@ -65,8 +65,8 @@ const About = () => {
             <p>
               I am actively seeking a new challenging project to contribute all
               that I have learned so far.
-            </p> */}
-            <h3>{t("about.about_me")}</h3>
+            </p>
+            {/* <h3>{t("about.about_me")}</h3>
             <p>{t("about.description")}</p>
 
             <h3>{t("about.strengths")}</h3>
@@ -95,7 +95,7 @@ const About = () => {
               : null}
 
             <h3>{t("about.future")}</h3>
-            <p>{t("about.future_description")}</p>
+            <p>{t("about.future_description")}</p> */}
           </div>
         </div>
       </div>
