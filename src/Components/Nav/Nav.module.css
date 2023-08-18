@@ -42,7 +42,8 @@ nav .grid {
   border-radius: 4px;
   position: absolute;
   top: 100%;
-  width: 200px;
+  right: 2%;
+  width: 160px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
