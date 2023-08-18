@@ -1,0 +1,45 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "header": {
+      "hi_there": "Hi There!",
+      "name": "I´m Agustina Tahhan",
+      "career": "Full Stack Developer & Dentist"
+    },
+    "about": {
+      "about_me": "About me",
+      "description": "I'm Agustina, a Full Stack Developer recently graduated from Henry's Bootcamp. I graduated as a dentist but soon realized it wasn't fulfilling my desire for challenges. Seeking a profession that matched my adventurous and travel-loving personality, I transitioned to programming. Now, I thrive on the excitement of this new path that perfectly aligns with my passions and aspirations.",
+      "strengths": "What I believe to be my greatest strengths?",
+      "strengths_description": "My bravery in stepping out of my comfort zone\nMy ability to adapt quickly to any situation\nMy quick aptitude for acquiring new knowledge\nMy effective communication skills within teams.","future": "What do I look for?",
+      "future_description": "I am actively seeking a new challenging project to contribute all that I have learned so far."
+    },
+    "skills": {
+      "skills_title": "Skills"
+    },
+    "projects": {
+      "project_title": "Projects",
+      "pokemon": {
+        "description1": "In this project, I've built a web application that fetches Pokémon data from an API and showcases them on the homepage.",
+        "description2": "The app offers a user-friendly sorting and filtering system for easy Pokémon exploration.",
+        "description3": "Additionally, users can create, edit, and delete custom characters with a validated form.",
+        "description4": "Explore the Pokémon world and enjoy an interactive experience with this engaging web app."
+      },
+      "sportiverse": {
+          "description1": "Make reservations for sports activities.",
+          "description2": "Reservate using a React calendar and pay through Mercado Pago.",
+          "description3": "Chatbot to assist users.",
+          "description4": "User dashboards to manage reservations, leave reviews, and update personal information.",
+          "description5": "Admin dashboard to offer easy management."
+        
+      },
+      "link": "Link to Repository",
+      "link_deploy": "Link to Sportiverse"
+    }
+
+  }
+  
