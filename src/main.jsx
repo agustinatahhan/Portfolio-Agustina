@@ -23,7 +23,7 @@ i18next
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "/src/translations/{{lng}}/global.json",
+      loadPath: "/locals/translations/{{lng}}/global.json",
     },
   });
 

@@ -66,7 +66,7 @@ const Nav = () => {
             <div className={`${style.bar} ${style.bar2}`}></div>
             <div className={`${style.bar} ${style.bar3}`}></div>
           </label>
-          {showOptions && (
+          {/* {showOptions && (
             <div className={style.enlaces}>
               <a href="#home">Home</a>
               <a href="#about">About me</a>
@@ -74,9 +74,9 @@ const Nav = () => {
               <a href="#projects">Projects</a>
               <a href="#footer">Contact</a>
             </div>
-          )}
+          )} */}
 
-          {/* {showOptions && (
+          {showOptions && (
             <div className={style.enlaces}>
               <a href="#home">{t("nav.home")}</a>
               <a href="#about">{t("nav.about")}</a>
@@ -110,7 +110,7 @@ const Nav = () => {
                 ))}
               </ul>
             )}
-          </div> */}
+          </div>
         </div>
       </div>
     </nav>

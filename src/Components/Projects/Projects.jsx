@@ -90,18 +90,18 @@ const Projects = () => {
     {
       title: "Pokémons",
       image: [pokemon, detailPoke, formPoke, lion],
-      // description: [
-      //   t("projects.pokemon.description1"),
-      //   t("projects.pokemon.description2"),
-      //   t("projects.pokemon.description3"),
-      // ],
       description: [
-        "Make reservations for sports activities.",
-        "Reservate using a React calendar and pay through Mercado Pago.",
-        "Chatbot to assist users.",
-        "User dashboards to manage reservations, leave reviews, and update personal information.",
-        "Admin dashboard to offer easy management."
+        t("projects.pokemon.description1"),
+        t("projects.pokemon.description2"),
+        t("projects.pokemon.description3"),
       ],
+      // description: [
+      //   "Make reservations for sports activities.",
+      //   "Reservate using a React calendar and pay through Mercado Pago.",
+      //   "Chatbot to assist users.",
+      //   "User dashboards to manage reservations, leave reviews, and update personal information.",
+      //   "Admin dashboard to offer easy management."
+      // ],
       technologies: [
         "React",
         "Redux",
@@ -115,19 +115,19 @@ const Projects = () => {
     {
       title: "Sportiverse",
       image: [sportiverse, login, dashboard, reservations],
-      // description: [
-      //   t("projects.sportiverse.description1"),
-      //   t("projects.sportiverse.description2"),
-      //   t("projects.sportiverse.description3"),
-      //   t("projects.sportiverse.description4"),
-      //   t("projects.sportiverse.description5"),
-      // ],
       description: [
-        "In this project, I've built a web application that fetches Pokémon data from an API and showcases them on the homepage.",
-        "The app offers a user-friendly sorting and filtering system for easy Pokémon exploration.",
-        "Additionally, users can create, edit, and delete custom characters with a validated form.",
-        "Explore the Pokémon world and enjoy an interactive experience with this engaging web app."
+        t("projects.sportiverse.description1"),
+        t("projects.sportiverse.description2"),
+        t("projects.sportiverse.description3"),
+        t("projects.sportiverse.description4"),
+        t("projects.sportiverse.description5"),
       ],
+      // description: [
+      //   "In this project, I've built a web application that fetches Pokémon data from an API and showcases them on the homepage.",
+      //   "The app offers a user-friendly sorting and filtering system for easy Pokémon exploration.",
+      //   "Additionally, users can create, edit, and delete custom characters with a validated form.",
+      //   "Explore the Pokémon world and enjoy an interactive experience with this engaging web app."
+      // ],
       technologies: [
         "React",
         "Redux",
@@ -157,8 +157,8 @@ const Projects = () => {
     <section id="projects" className={style.bg}>
       <div className={style.grid}>
         <div className={`${style.gridIcons} ${style.span6}`}>
-          {/* <h2 className={style.span6}>{t("projects.project_title")}</h2> */}
-          <h2 className={style.span6}>Projects</h2>
+          <h2 className={style.span6}>{t("projects.project_title")}</h2>
+          {/* <h2 className={style.span6}>Projects</h2> */}
 
           {displayedCards.map((card, index) => (
             <div key={index} className={style.myCard}>

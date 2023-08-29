@@ -1,0 +1,46 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "header": {
+        "hi_there": "Hola!",
+        "name": "Soy Agustina Tahhan",
+        "career": "Desarrolladora Full Stack & Odontóloga"
+    },
+    "about": {
+        "about_me":  "Sobre mí",
+        "description": "Soy Agustina, soy una desarrolladora Full Stack recientemente graduada de el bootcamp de Henry. Me gradué como Odontóloga, pero me di cuenta de que necesitaba un trabajo más estimulante. Buscando una carrera que se alineara con mi espíritu aventurero y mi amor por los viajes, hice el cambio hacia la programación. Actualmente, disfruto de la emoción de este nuevo rumbo que encaja perfectamente con mis pasiones y metas.", 
+        "strengths": "Mis mayores fortalezas:",
+        "strengths_description": "Mi valentía para salir de mi zona de confort\nMi capacidad para adaptarme rápidamente a cualquier situación\nMi rápida aptitud para adquirir nuevos conocimientos\nMis habilidades efectivas de comunicación dentro de los equipos",
+        "future": "Qué busco?",
+        "future_description": "Estoy buscando un nuevo proyecto desafiante para aportar todo lo que he aprendido hasta ahora."
+      },
+    "skills": {
+        "skills_title": "Habilidades"
+    },
+    "projects": {
+        "project_title": "Proyectos",
+        "pokemon": {
+          "description1": "En este proyecto, he construido una aplicación web que obtiene datos de Pokémon de una API y los muestra en la página de inicio.",
+          "description2": "La aplicación ofrece un sistema de ordenamiento y filtrado fácil de usar para buscar Pokémons.",
+          "description3": "Además, los usuarios pueden crear, editar y eliminar personajes personalizados con un formulario validado."
+        },
+        "sportiverse": {
+          "description1": "Realiza reservas para actividades deportivas.",
+          "description2": "Reserva usando un calendario React y paga a través de Mercado Pago.",
+          "description3": "Chatbot para asistir a los usuarios.",
+          "description4": "Dashboard de usuario para gestionar reservas, dejar reseñas y actualizar información personal.",
+          "description5": "Dashboard de administrador para ofrecer una gestión sencilla."
+        },
+        "link": "Link Repositorio",
+        "link_deploy": "Link a Sportiverse"
+      }
+      
+  
+    
+  
+}
