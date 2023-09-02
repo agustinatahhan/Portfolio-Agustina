@@ -14,21 +14,18 @@
   letter-spacing: 2px;
 }
 
-.grid h2 {
-  font-size: 40px;
-  font-weight: 500;
+.title1 {
   text-align: center;
-  align-self: self-start;
-  justify-self: center;
-  grid-column: 6 / 8;
-  margin-bottom: -5rem;
-  letter-spacing: 15px;
-  font-family: var(--bebas);
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
-  
+  font-family: var(--rubik);
+  text-shadow: 2px 2px 1px black;
+  font-size: 40px;
+  letter-spacing: 10px;
+  line-height: 1.5;
+  font-weight: 200;
+  color: rgb(248, 227, 248);
+  margin-bottom: 2rem;
 }
+
 
 .gridIcons {
   display: grid;
@@ -141,11 +138,11 @@
 
 .title {
   font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
-  color: black;
+  line-height: 2rem;
+  color: rgb(75 85 99);
+  font-size: 17px;
   z-index: 1;
+  margin: 0;
 }
 
 .innerCard {

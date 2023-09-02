@@ -16,8 +16,11 @@ nav {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: var(--grey);
+  /* background-color: #EBD8FA; */
+  /* background-color: #c7b1ce; */
+  background-color: rgb(149, 147, 150);
   z-index: 3;
+  opacity: .9;
 }
 
 nav .grid {
@@ -99,7 +102,6 @@ nav .grid {
   transition: bottom 200ms 100ms, transform 100ms;
 }
 
-/* Estilos para el ícono del menú cuando está marcado */
 input.checkIcon:checked + label.iconMenu > .bar1 {
   transition: top 200ms, transform 200ms 100ms;
 }
@@ -116,7 +118,7 @@ input.checkIcon:checked + label.iconMenu {
   --rotate-bar-three: -45deg;
 }
 .checkIcon:checked + label.iconMenu + .enlaces {
-  display: flex; /* Mostrar el menú cuando el botón está marcado */
+  display: flex; 
 }
 .languageMenu {
   margin-left: 1rem;
@@ -129,7 +131,7 @@ input.checkIcon:checked + label.iconMenu {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   position: relative;
 }
@@ -137,8 +139,8 @@ input.checkIcon:checked + label.iconMenu {
 .languageButton svg {
   margin-right: 8px;
   fill: #ffffff;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
 }
 
 .languageDropdown {
@@ -155,6 +157,8 @@ input.checkIcon:checked + label.iconMenu {
   padding: 4px 8px;
   cursor: pointer;
   list-style: none;
+  text-decoration: none;
+  color: #333;
 }
 
 .languageDropdown li:hover {

@@ -49,8 +49,8 @@ const Nav = () => {
     setShowOptions((prevShowOptions) => !prevShowOptions);
   };
   return (
-    <nav>
-      <div className={`${style.grid} ${style.containerCenter}`}>
+    <nav >
+      <div className={` ${style.grid} ${style.containerCenter}`}>
         <div className={style.menuContainer}>
           <input
             hidden

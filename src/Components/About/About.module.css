@@ -1,17 +1,18 @@
 .about div .background {
   background: url(../../assets/agusbw.jpg);
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   justify-self: center;
   align-self: center;
   cursor: pointer;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 255, 0.2);
+  border-radius: 50%;
+  border: 1px solid rgba(244, 183, 244, 0.2);
   transition: all 0.2s;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  box-shadow: 12px 12px 2px 1px rgba(240, 205, 240, 0.5);
 }
+
 .about div .background:hover {
-  box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, 0.2);
+  box-shadow: -12px 12px 2px -1px rgba(240, 205, 240, 0.5);
 }
 .background {
   background-position: right !important;
@@ -40,34 +41,36 @@
   
 }
 
+.span10{
+  grid-column: span 10;
+}
+
 .textContent.lateral {
   padding: 0 50px;
-  margin: 1rem 0;
-  
 }
 
-.textContent.lateral h3 {
-  font-size: 22px;
+.cardItem{
+max-width: auto;
+padding: 1rem;
+background-color: #fff;
+border-radius: 10px;
+/* border: .2px solid rgba(94, 92, 92, 0.091); */
+box-shadow: 30px 30px 30px rgba(0, 0, 0, .05);
+margin: 1rem 0;
+}
+
+.title {
   font-weight: 600;
-  text-align: start;
-  letter-spacing: 4px;
-  margin-bottom: .5rem;
+  color: rgb(31 41 55);
+  margin: .4rem 0;
+  letter-spacing: 3px;
 }
 
-.textContent.lateral p {
-  margin: .5rem 0 1.5rem 0;
-  text-align: start;
-  letter-spacing: 2px;
-  font-size: 15px;
-}
-
-.ul{
-  font-size: 15px;
-  letter-spacing: 2px;
-  margin-bottom: .5rem;
-  font-size: 15px;
-  list-style: none;
-
+.description {
+  font-size: 0.875rem;
+  line-height: 2rem;
+  color: rgb(75 85 99);
+  font-size: 17px;
 }
 
 @media (max-width: 1023px) {
@@ -98,7 +101,9 @@
       text-align: center;
       margin: .5rem 0 0 0;
     }
-    
+    .textContent.lateral p{
+      text-align: center;
+    }
   
     
 }

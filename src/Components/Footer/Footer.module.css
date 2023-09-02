@@ -7,7 +7,6 @@ footer {
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
   height: 100%;
 }
 
