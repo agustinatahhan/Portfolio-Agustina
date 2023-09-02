@@ -213,7 +213,10 @@
 /* Estilos específicos para pantallas más pequeñas, como iPhone */
 @media (max-width: 767px) {
  
-
+  .title1{
+    font-size: 28px;
+    
+  }
   .gridIcons {
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem 0; /* Eliminar el margen superior */

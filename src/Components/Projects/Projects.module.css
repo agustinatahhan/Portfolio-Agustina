@@ -221,6 +221,12 @@
   margin: 1rem 0; 
 }
 
+.spanBtn{
+  text-decoration: none;
+  color: #333;
+cursor: pointer;
+}
+
 @keyframes slide {
   0% {
     margin-left: 0;
@@ -253,6 +259,9 @@
 
 /* Responsive styles for iPhone */
 @media (max-width: 1023px) {
+  .title1{
+    font-size: 28px;
+  }
   .text ul {
     text-align: center;
     display: flex;
