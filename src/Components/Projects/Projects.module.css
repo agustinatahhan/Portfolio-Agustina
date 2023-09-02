@@ -290,11 +290,11 @@
 
 /* Styles for Computer */
 @media (min-width: 1024px) {
-  .span6 {
+  /* .span6 {
     font-size: 40px;
     letter-spacing: 4px;
     
-  }
+  } */
 
   .imgCard {
     width: 40rem;

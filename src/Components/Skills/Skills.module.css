@@ -212,11 +212,7 @@
 
 /* Estilos específicos para pantallas más pequeñas, como iPhone */
 @media (max-width: 767px) {
-  .grid h2 {
-    font-size: 28px;
-    margin-bottom: 0; /* Eliminar el margen inferior */
-    grid-column: 1 / 13; /* Ocupar todo el ancho del grid */
-  }
+ 
 
   .gridIcons {
     grid-template-columns: repeat(2, 1fr);
