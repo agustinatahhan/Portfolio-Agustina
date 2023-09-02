@@ -10,16 +10,16 @@ const About = () => {
   }, []);
 
   const { t } = useTranslation("global");
-  const description = [
-    "My bravery in stepping out of my comfort zone",
-    "My ability to adapt quickly to any situation",
-    "My quick aptitude for acquiring new knowledge",
-    "My effective communication skills within teams.",
-  ];
+  // const description = [
+  //   "My bravery in stepping out of my comfort zone",
+  //   "My ability to adapt quickly to any situation",
+  //   "My quick aptitude for acquiring new knowledge",
+  //   "My effective communication skills within teams.",
+  // ];
 
   return (
     <section id="about" className={`${style.about} box`} data-aos="fade">
-      <div className={style.grid}>
+      <div className={`${style.grid} ${style.span10}`}>
         <div
           className={`${style.background} ${style.span4}`}
           data-aos="fade-right"
@@ -66,18 +66,33 @@ const About = () => {
               I am actively seeking a new challenging project to contribute all
               that I have learned so far.
             </p> */}
-            <h3>{t("about.about_me")}</h3>
-            <p>{t("about.description")}</p>
-
-            <h3>{t("about.strengths")}</h3>
+            <div className={style.cardItem}>
+              <h3 className={style.title}>{t("about.about_me")}</h3>
+              {/* <p className={style.description}>{t("about.description")}</p> */}
+              {t("about.description")
+                .split("\n")
+                .map((info, index) => (
+                  <div key={index} className={style.description}>
+                    {/* <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path fill="#4b5563" d="M9 9v6h6V9H9m2 2h2v2h-2v-2Z" />
+                    </svg> */}
+                    {info}
+                  </div>
+                ))}
+            <h3 className={style.title}>{t("about.strengths")}</h3>
             {Array.isArray(t("about.strengths_description").split("\n"))
               ? t("about.strengths_description")
                   .split("\n")
                   .map((info, index) => (
-                    <div key={index} className={style.ul}>
+                    <div key={index} className={style.description}>
                       <svg
-                        width="16"
-                        height="16"
+                        width="14"
+                        height="14"
                         viewBox="0 0 24 24"
                         xmlns="http:www.w3.org/2000/svg"
                       >
@@ -93,9 +108,8 @@ const About = () => {
                     </div>
                   ))
               : null}
-
-            <h3>{t("about.future")}</h3>
-            <p>{t("about.future_description")}</p>
+            </div>
+            
           </div>
         </div>
       </div>

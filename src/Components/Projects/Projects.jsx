@@ -88,31 +88,6 @@ const Projects = () => {
 
   const cardData = [
     {
-      title: "Pokémons",
-      image: [pokemon, detailPoke, formPoke, lion],
-      description: [
-        t("projects.pokemon.description1"),
-        t("projects.pokemon.description2"),
-        t("projects.pokemon.description3"),
-      ],
-      // description: [
-      //   "Make reservations for sports activities.",
-      //   "Reservate using a React calendar and pay through Mercado Pago.",
-      //   "Chatbot to assist users.",
-      //   "User dashboards to manage reservations, leave reviews, and update personal information.",
-      //   "Admin dashboard to offer easy management."
-      // ],
-      technologies: [
-        "React",
-        "Redux",
-        "Node",
-        "Express",
-        "Sequelize",
-        "PostgreSQL",
-      ],
-      repository: "https://github.com/agustinatahhan/Pi-Pokemon",
-    },
-    {
       title: "Sportiverse",
       image: [sportiverse, login, dashboard, reservations],
       description: [
@@ -146,6 +121,31 @@ const Projects = () => {
       repositoryBack: "https://github.com/nadiamartel/PF_BACK",
       repositoryFront: "https://github.com/SofiDubrowsky/PF-Front",
     },
+    {
+      title: "Pokémons",
+      image: [pokemon, detailPoke, formPoke, lion],
+      description: [
+        t("projects.pokemon.description1"),
+        t("projects.pokemon.description2"),
+        t("projects.pokemon.description3"),
+      ],
+      // description: [
+      //   "Make reservations for sports activities.",
+      //   "Reservate using a React calendar and pay through Mercado Pago.",
+      //   "Chatbot to assist users.",
+      //   "User dashboards to manage reservations, leave reviews, and update personal information.",
+      //   "Admin dashboard to offer easy management."
+      // ],
+      technologies: [
+        "React",
+        "Redux",
+        "Node",
+        "Express",
+        "Sequelize",
+        "PostgreSQL",
+      ],
+      repository: "https://github.com/agustinatahhan/Pi-Pokemon",
+    },
     // Agrega más tarjetas según sea necesario
   ];
 
@@ -157,7 +157,7 @@ const Projects = () => {
     <section id="projects" className={style.bg}>
       <div className={style.grid}>
         <div className={`${style.gridIcons} ${style.span6}`}>
-          <h2 className={style.span6}>{t("projects.project_title")}</h2>
+          <h2 className={style.title1}>{t("projects.project_title")}</h2>
           {/* <h2 className={style.span6}>Projects</h2> */}
 
           {displayedCards.map((card, index) => (

@@ -26,7 +26,7 @@ const Skills = () => {
   return (
     <section id="skills" className={style.bg} data-aos="fade">
       <div className={style.grid}>
-        <h2 className={style.span6}>{t("skills.skills_title")}</h2>
+        <h2 className={`${style.span6} ${style.title1}`}>{t("skills.skills_title")}</h2>
         {/* <h2 className={style.span6}>Skills</h2> */}
         <div className={`${style.gridIcons} ${style.span6}`}>
 

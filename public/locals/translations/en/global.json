@@ -7,15 +7,16 @@
       "contact": "Contact"
     },
     "header": {
-      "hi_there": "Hi There!",
-      "name": "I´m Agustina Tahhan",
+      "hi_there": "Hi there,",
+      "name": "I´m Agustina",
       "career": "Full Stack Developer"
     },
     "about": {
       "about_me": "About me",
-      "description": "I'm Agustina, a Full Stack Developer recently graduated from Henry's Bootcamp. I graduated as a dentist but soon realized it wasn't fulfilling my desire for challenges. Seeking a profession that matched my adventurous and travel-loving personality, I transitioned to programming. Now, I thrive on the excitement of this new path that perfectly aligns with my passions and aspirations.",
-      "strengths": "What I believe to be my greatest strengths?",
-      "strengths_description": "My bravery in stepping out of my comfort zone\nMy ability to adapt quickly to any situation\nMy quick aptitude for acquiring new knowledge\nMy effective communication skills within teams.","future": "What do I look for?",
+      "description": "I'm a Full Stack Developer.\nMy journey before was different, I graduated as a dentist and soon realized that was too static for my adventurous spirit.\nI decided to travel and break out of my comfort zone to open my mind to new cultures.\nOne year in Sweden and another in Germany, I gained valuable work experience abroad and improved my English.\nThese experiences led me to look for my a new passion: programming.",
+      "strengths": "My strengths:",
+      "strengths_description": "My bravery in stepping out of my comfort zone\nMy ability to adapt quickly to any situation\nMy quick aptitude for acquiring new knowledge\nMy effective communication skills within teams.",
+      "future": "What do I look for?",
       "future_description": "I am actively seeking a new challenging project to contribute all that I have learned so far."
     },
     "skills": {
