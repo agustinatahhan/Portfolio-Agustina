@@ -1,7 +1,10 @@
-footer {
+.bgFooter {
   width: 100%;
-  height: 200px;
-  border-top: 1px solid black;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
+  border: none;
 }
 
 .grid {
@@ -59,23 +62,30 @@ nav .sociales a:hover {
   gap: 20px;
 }
 
+.footerIconsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
 .socialContainer {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: var(--grey);
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 .containerOne:hover {
-  background-color: black;
+  background-color: rgb(56, 56, 56);
   transition-duration: 0.3s;
 }
 .containerTwo:hover {
-  background-color: var(--red);
+  background-color: rgb(241, 47, 47);
   transition-duration: 0.3s;
 }
 /* linkdin*/
@@ -196,6 +206,12 @@ nav .sociales a:hover {
   nav .sociales a {
     margin: 5px;
     font-size: 14px;
+    
+  }
+  .footerIconsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
   }
 }

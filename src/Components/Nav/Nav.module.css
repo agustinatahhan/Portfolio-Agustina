@@ -1,64 +1,32 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-  height: 100%;
-}
-
-.containerCenter {
-  width: 85%;
-  margin: 0 auto;
-}
-
 nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  /* background-color: #EBD8FA; */
-  /* background-color: #c7b1ce; */
-  background-color: rgb(149, 147, 150);
+  background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
   z-index: 3;
-  opacity: .9;
+  height: 7.5rem;
 }
 
-nav .grid {
-  justify-items: flex-end;
-  align-items: center;
-}
-
-.menuContainer {
+.logo {
+  width: 120px;
+  height: 89px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  grid-column: 12;
+  justify-content: center;
 }
 
-.enlaces {
-  position: relative;
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #f1f1f1;
-  padding: 10px;
-  border-radius: 4px;
-  position: absolute;
-  top: 100%;
-  right: 2%;
-  width: 160px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.enlaces a {
-  color: #333;
+.links a {
+  color: white;
   text-decoration: none;
-  padding: 8px;
+  padding: 15px;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  font-size: 23px;
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
-.enlaces a:hover {
-  background-color: #ddd;
+.links a:hover {
+  transform: scale(1.1);
+  font-weight: 700;
 }
 
 .iconMenu {
@@ -82,7 +50,7 @@ nav .grid {
   height: var(--height-bar);
   width: 100%;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: black;
 }
 
 .bar1 {
@@ -118,8 +86,9 @@ input.checkIcon:checked + label.iconMenu {
   --rotate-bar-three: -45deg;
 }
 .checkIcon:checked + label.iconMenu + .enlaces {
-  display: flex; 
+  display: flex;
 }
+
 .languageMenu {
   margin-left: 1rem;
   position: relative;
@@ -132,15 +101,15 @@ input.checkIcon:checked + label.iconMenu {
   border: none;
   cursor: pointer;
   font-size: 18px;
-  color: #ffffff;
   position: relative;
+  color: white;
 }
 
 .languageButton svg {
   margin-right: 8px;
   fill: #ffffff;
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
 }
 
 .languageDropdown {
@@ -170,7 +139,6 @@ input.checkIcon:checked + label.iconMenu {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: inherit;
   font-size: inherit;
   cursor: pointer;
   text-decoration: none;
@@ -178,19 +146,11 @@ input.checkIcon:checked + label.iconMenu {
 }
 
 @media (max-width: 1023px) {
-  .enlaces {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 4px;
-    position: absolute;
-    top: 100%;
-    right: 3%;
-    width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+   .logo {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

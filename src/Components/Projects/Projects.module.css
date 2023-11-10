@@ -211,7 +211,6 @@
 }
 .title1 {
   text-align: center;
-  font-family: var(--rubik);
   text-shadow: 2px 2px 1px black;
   font-size: 40px;
   letter-spacing: 10px;
