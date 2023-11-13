@@ -4,7 +4,7 @@
         "about": "Sobre mí",
         "skills": "Habilidades",
         "projects": "Proyectos",
-        "contact": "Contacto"
+        "contact": "Contáctame"
     },
     "header": {
         "hi_there": "Hola!",
@@ -42,7 +42,15 @@
         },
         "link": "Link Repositorio",
         "link_deploy": "Link a Sportiverse"
-      }
+      },
+      "contact": {
+        "title": "Contáctame",
+        "description": "Si tienes alguna pregunta o te gustaría trabajar conmigo, no dudes en contactarme.",
+        "name": "Nombre completo",
+        "email": "Email",
+        "message": "Mensaje",
+        "send": "Enviar"
+    }
       
   
     

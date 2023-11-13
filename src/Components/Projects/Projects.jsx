@@ -308,12 +308,12 @@ const Projects = () => {
 
   return (
     <div
-      className={`min-vh-100 d-flex align-items-center justify-content-center my-5 ${style.header}`}
+      className={`min-vh-100 d-flex align-items-center justify-content-center py-5 ${style.bg}`}
       id="projects"
     >
       <div className="container">
-        <h2 className="text-center display-5 text-uppercase fw-medium my-5">{t("projects.project_title")}</h2>
-        <div className="row row-cols-1 row-cols-md-2 g-4">
+        <h2 data-aos="fade-right" className={`text-center my-5 display-5 ${style.title}`}>{t("projects.project_title")} </h2>
+        <div  data-aos="flip-up" className="row row-cols-1 row-cols-md-2 g-4">
           <div className="col">
             <NavLink to={sportiverseLink}>
               <div className="card">

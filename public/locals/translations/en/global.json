@@ -1,10 +1,10 @@
 {
     "nav": {
       "home": "Home",
-      "about": "About",
+      "about": "About me",
       "skills": "Skills",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Get in touch"
     },
     "header": {
       "hi_there": "Hi there,",
@@ -44,7 +44,15 @@
       },
       "link": "Link to Repository",
       "link_deploy": "Link to Sportiverse"
-    }
+    },
+    "contact": {
+      "title": "Get in touch",
+      "description": "If you have any questions or would like to work with me, feel free to contact me.",
+      "name": "Full name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+  }
 
   }
   

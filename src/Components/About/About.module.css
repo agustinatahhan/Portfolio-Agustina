@@ -1,3 +1,10 @@
+.about{
+  background: rgb(235, 229, 235);
+  background: rgb(246, 242, 246);
+
+  /* background: #000000b9; */
+}
+
 .about div .background {
   background: url(../../assets/agusbw.jpg);
   width: 23rem;
@@ -52,7 +59,7 @@
 .cardItem{
 max-width: auto;
 padding: 1rem;
-background-color: #fff;
+/* background-color: #fff; */
 border-radius: 10px;
 /* border: .2px solid rgba(94, 92, 92, 0.091); */
 /* box-shadow: 30px 30px 30px rgba(0, 0, 0, .05); */
@@ -64,12 +71,15 @@ margin: 1rem 0;
   color: rgb(31 41 55);
   margin: .4rem 0;
   letter-spacing: 3px;
+  /* color: white; */
 }
 
 .description {
   font-size: 0.875rem;
   line-height: 2rem;
   color: rgb(75 85 99);
+  /* color: white; */
+  color: #000;
   font-size: 17px;
 }
 

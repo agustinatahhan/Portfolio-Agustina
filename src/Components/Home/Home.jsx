@@ -1,5 +1,5 @@
 // import style from "./Home.module.css";
-import Nav from "../Nav/Nav";
+// import Nav from "../Nav/Nav";
 import Header from "../Header/Header";
 import About from "../About/About";
 // import BgComputer from "../BgComputer/BgComputer";
@@ -7,11 +7,11 @@ import About from "../About/About";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 // import Certifications from "../Certifications/Certifications";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Header />
       {/* <BgComputer/> */}
       <About />
@@ -21,7 +21,7 @@ const Home = () => {
       <Projects />
       {/* <BgComputer/> */}
       {/* <Certifications /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

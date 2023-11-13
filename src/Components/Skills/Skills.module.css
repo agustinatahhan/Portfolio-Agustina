@@ -4,28 +4,11 @@
   grid-template-columns: repeat(12, 1fr);
   height: 100%;
 }
-
-.span6 {
-  grid-column: span 12;
-  align-self: center;
-  justify-self: center;
-  letter-spacing: 2px;
-}
-
-
-.gridIcons {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: -2rem;
-  align-self: self-start;
-}
-
-.bg h2 {
-  text-align: center;
-  margin-top: 2rem;
+.title2{
+  font-weight: 500;
+  color: rgb(31 41 55);
+  margin: .4rem 0;
+  letter-spacing: 3px;
 }
 
 .card {

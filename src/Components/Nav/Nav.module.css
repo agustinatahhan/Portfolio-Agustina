@@ -3,6 +3,7 @@ nav {
   background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
   z-index: 3;
   height: 7.5rem;
+  margin: 0;
 }
 
 .logo {
@@ -145,12 +146,12 @@ input.checkIcon:checked + label.iconMenu {
   color: #333;
 }
 
-@media (max-width: 1023px) {
-   .logo {
-    width: 100px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @media (max-width: 767px) {
+    .nn {
+      width: 100%;
+      background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
+
+    }
   }
-}
+
+

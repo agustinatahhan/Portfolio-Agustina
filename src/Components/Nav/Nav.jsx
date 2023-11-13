@@ -22,8 +22,8 @@ const languages = [
 
 const LanguageIcon = () => (
   <svg
-    width="32"
-    height="32"
+    width="30"
+    height="30"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -67,7 +67,7 @@ const Nav = () => {
         </button>
         <div
           className={`collapse navbar-collapse justify-content-evenly`}
-          id="navbarSupportedContent"
+          id="navbarSupportedContent" 
         >
           <ul className={`navbar-nav mb-2 mb-lg-0 fw-medium fs-4}`}>
             <li className={`nav-item justify-content-center ${style.links}`}>

@@ -1,28 +1,13 @@
 .bg {
-  border-top: 1px solid black;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  height: fit-content;
+    background: rgb(246, 242, 246);
 }
 
-.span6 {
-  grid-column: span 12;
-  text-align: center;
-  font-size: 40px;
-  letter-spacing: 4px;
+.title{
   font-weight: 500;
+  color: rgb(31 41 55);
+  margin: .4rem 0;
+  letter-spacing: 3px;
 }
-
-/* .span6 h2{
-  letter-spacing: 15px;
-  font-family: var(--bebas);
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px black;
-  margin: 1rem 0 0 0;
-} */
 
 .gridIcons {
 

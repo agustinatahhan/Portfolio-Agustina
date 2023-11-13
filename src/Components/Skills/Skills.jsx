@@ -30,7 +30,7 @@ const Skills = () => {
       id="skills"
     >
       <div className="container">
-        <h2 className="text-center display-5 text-uppercase fw-medium my-5">{t("skills.skills_title")}</h2>
+        <h2 data-aos="fade-right" className={`text-center my-5 display-5 ${style.title2}`}>{t("skills.skills_title")}</h2>
         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
           <div className="d-flex align-items-center justify-content-center ">
               <div className={style.myCard} data-aos="zoom-in">
