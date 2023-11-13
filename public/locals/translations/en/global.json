@@ -24,6 +24,10 @@
     },
     "projects": {
       "project_title": "Projects",
+      "sportiverse_card": "Online Web Reservation System for a sports complex, enabling users to book slots, make payments, and provide feedback.",
+      "pokemon_card": "Website for Pokémon enthusiasts, allowing them to explore characteristics and create their own.",
+      "m4life_card": "Microbes for Life's website, dedicated to developing microbiological solutions for agriculture and the environment.",
+      "todo_card": "A task organization app to plan your days with added tasks, modifications, and category selections for efficient daily management.",
       "pokemon": {
         "description1": "In this project, I've built a web application that fetches Pokémon data from an API and showcases them on the homepage.",
         "description2": "The app offers a user-friendly sorting and filtering system for easy Pokémon exploration.",

@@ -1,12 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 :root {
- --nanum: 'Nanum Gothic', sans-serif;
  --rubik: 'Rubik Mono One', sans-serif;
- --koulen: 'Koulen', cursive;
- --bebas: 'Bebas Neue', sans-serif; 
- --other: 'Mukta', sans-serif;
- --open: 'Open Sans', sans-serif;
+ --supreme: 'Supreme', sans-serif; 
  --satoshi: 'Satoshi', sans-serif;
  --latte: #A38F85;
  --stone: #CDC6C3;

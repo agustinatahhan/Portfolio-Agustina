@@ -149,9 +149,12 @@
   }
 
   .header::before {
-    background: url(../../assets/bbbgp.jpg);
+    background: url(../../assets/bbbgpcel.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    
+    width: 100%;
   }
  
 }

@@ -1,6 +1,4 @@
-.bg{
-  border-top: 1px solid black;
-}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -12,17 +10,6 @@
   align-self: center;
   justify-self: center;
   letter-spacing: 2px;
-}
-
-.title1 {
-  text-align: center;
-  text-shadow: 2px 2px 1px black;
-  font-size: 40px;
-  letter-spacing: 10px;
-  line-height: 1.5;
-  font-weight: 200;
-  color: rgb(248, 227, 248);
-  margin-bottom: 2rem;
 }
 
 
@@ -84,6 +71,7 @@
   border: 0;
   z-index: 2;
 }
+
 .myCard:after {
   --m-i: linear-gradient(#000, #000);
   --m-o: content-box, padding-box;
@@ -195,6 +183,7 @@
   animation: animate 5s linear infinite;
 }
 
+
 @keyframes animate {
   0% {
     opacity: 0.3;
@@ -211,10 +200,10 @@
 
 /* Estilos específicos para pantallas más pequeñas, como iPhone */
 @media (max-width: 767px) {
- 
+
   .title1{
     font-size: 28px;
-    
+
   }
   .gridIcons {
     grid-template-columns: repeat(2, 1fr);
@@ -232,7 +221,7 @@
   .gridIcons {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    
+
   }
 }
 

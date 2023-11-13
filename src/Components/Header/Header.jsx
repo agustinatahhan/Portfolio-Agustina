@@ -60,7 +60,7 @@ const Header = () => {
 
     <section
       className={`min-vh-100 d-flex align-items-center justify-content-center ${style.header}`}
-      id="Whatwedo"
+      id="home"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center">

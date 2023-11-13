@@ -1,7 +1,7 @@
 import style from "./Nav.module.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import i18next from "i18next";
+// import i18next from "i18next";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -47,15 +47,13 @@ const Nav = () => {
     AOS.init();
   }, []);
 
-  const handleMenuClick = () => {
-    setShowOptions((prevShowOptions) => !prevShowOptions);
-  };
+  // const handleMenuClick = () => {
+  //   setShowOptions((prevShowOptions) => !prevShowOptions);
+  // };
   
   return (
-   
     <nav className="navbar navbar-expand-lg bg-tertiary navbar-idea p-3 fixed-top">
       <div className={`container-fluid d-flex mx-5`}>
-        
         <button
           className={`navbar-toggler menu`}
           type="button"
@@ -70,27 +68,37 @@ const Nav = () => {
         <div
           className={`collapse navbar-collapse justify-content-evenly`}
           id="navbarSupportedContent"
-          
         >
           <ul className={`navbar-nav mb-2 mb-lg-0 fw-medium fs-4}`}>
             <li className={`nav-item justify-content-center ${style.links}`}>
-              <a className="nav-link me-4 text-white" aria-current="page" href="/#Whatwedo">
+              <a className="nav-link me-4 text-white fw-medium fs-4" href="/#home">
                 {t("nav.home")}
               </a>
             </li>
             <li className={`nav-item justify-content-center ${style.links}`}>
-              <a className="nav-link me-4 text-white" aria-current="page" href="/#ourproduct">
+              <a className="nav-link me-4 text-white fw-medium fs-4" href="/#about">
                 {t("nav.about")}
               </a>
             </li>
             <li className={`nav-item justify-content-center ${style.links}`}>
-              <a className="nav-link me-4 text-white" href="/#team">
+              <a className="nav-link me-4 text-white fw-medium fs-4" href="/#skills">
                 {t("nav.skills")}
               </a>
             </li>
             <li className={`nav-item justify-content-center ${style.links}`}>
-              <NavLink class="nav-link me-4 text-white" aria-current="page" to="/contact">
+              <a
+                className="nav-link me-4 text-white fw-medium fs-4"
+                href="/#projects"
+              >
                 {t("nav.projects")}
+              </a>
+            </li>
+            <li className={`nav-item justify-content-center ${style.links}`}>
+              <NavLink
+                className="nav-link me-4 text-white fw-medium fs-4"
+                to="/contact"
+              >
+                {t("nav.contact")}
               </NavLink>
             </li>
             <li className={`nav-item dropdown ${style.links} `}>

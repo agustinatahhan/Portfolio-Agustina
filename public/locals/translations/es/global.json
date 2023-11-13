@@ -23,7 +23,11 @@
         "skills_title": "Habilidades"
     },
     "projects": {
-        "project_title": "Proyectos",
+      "project_title": "Proyectos",
+      "sportiverse_card": "Sistema de reservas en línea para un complejo deportivo, donde los usuarios pueden programar turnos, realizar pagos y dejar comentarios",
+      "pokemon_card": "Sitio web para los fanáticos de Pokémon, donde pueden ver las características y crear los suyos propios.",
+      "m4life_card": "Sitio web para Microbes for Life, una empresa dedicada al desarrollo de soluciones microbiológicas para la agricultura y el medio ambiente.",
+      "todo_card": "Aplicación para organizar tareas que te permite planificar tus días, agregar tareas, categorías y gestionar tu día de manera eficiente",
         "pokemon": {
           "description1": "En este proyecto, he construido una aplicación web que obtiene datos de Pokémon de una API y los muestra en la página de inicio.",
           "description2": "La aplicación ofrece un sistema de ordenamiento y filtrado fácil de usar para buscar Pokémons.",

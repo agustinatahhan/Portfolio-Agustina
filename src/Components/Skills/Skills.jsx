@@ -24,155 +24,194 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className={style.bg} data-aos="fade">
-      <div className={style.grid}>
-        <h2 className={`${style.span6} ${style.title1}`}>{t("skills.skills_title")}</h2>
-        {/* <h2 className={style.span6}>Skills</h2> */}
-        <div className={`${style.gridIcons} ${style.span6}`}>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconHtml} alt="" />
+    <div
+      className={`min-vh-100 d-flex align-items-center justify-content-center my-5 ${style.header}`}
+      data-aos="fade"
+      id="skills"
+    >
+      <div className="container">
+        <h2 className="text-center display-5 text-uppercase fw-medium my-5">{t("skills.skills_title")}</h2>
+        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={iconHtml} alt="" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>HTML</p>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.borderEffect}></div>
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={iconCss} alt="css" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>CSS</p>
+                  </div>
+                </div>
               </div>
-              <div className={style.backSide}>
-                <p className={style.title}>HTML</p>
+            </div>
+         
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img
+                      className={style.imgJs}
+                      src={iconJs}
+                      alt="Java Script"
+                    />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>JavaScript</p>
+                  </div>
+                </div>
+            
+            </div>
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={iconReact} alt="Sass" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>React</p>
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={iconRedux} alt="Redux" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>Redux</p>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={node} alt="Node Js" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>Node Js</p>
+                  </div>
+                </div>
+              </div>
+          
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img
+                      className={style.img}
+                      src={iconPostgreSQL}
+                      alt="PostgreSQL"
+                    />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>PostgreSQL</p>
+                  </div>
+                </div>
+            
+            </div>
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img
+                      className={style.img}
+                      src={iconExpress}
+                      alt="Express"
+                    />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>Express</p>
+                  </div>
+                </div>
+           
+            </div>
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img
+                      className={style.img}
+                      src={iconSequelize}
+                      alt="Sequelize"
+                    />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>Sequelize</p>
+                  </div>
+                </div>
+             
+            </div>
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={iconGit} alt="Git" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>Git</p>
+                  </div>
+                </div>
+           
+            </div>
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img
+                      className={style.img}
+                      src={iconTailwind}
+                      alt="Tailwind"
+                    />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>Tailwind</p>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+          <div className="d-flex align-items-center justify-content-center ">
+              <div className={style.myCard} data-aos="zoom-in">
+                <div className={style.innerCard}>
+                  <div className={style.frontSide}>
+                    <img className={style.img} src={iconSass} alt="Sass" />
+                  </div>
+                  <div className={style.backSide}>
+                    <p className={style.title}>SASS</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.borderEffect}></div>
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconCss} alt="css" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>CSS</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.imgJs} src={iconJs} alt="Java Script" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>JavaScript</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconReact} alt="Sass" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>React</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconRedux} alt="Redux" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>Redux</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={node} alt="Node Js" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>Node Js</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img
-                  className={style.img}
-                  src={iconPostgreSQL}
-                  alt="PostgreSQL"
-                />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>PostgreSQL</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconExpress} alt="Express" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>Express</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img
-                  className={style.img}
-                  src={iconSequelize}
-                  alt="Sequelize"
-                />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>Sequelize</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconGit} alt="Git" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>Git</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconTailwind} alt="Tailwind" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>Tailwind</p>
-              </div>
-            </div>
-          </div>
-
-          <div className={style.myCard} data-aos="zoom-in">
-            <div className={style.innerCard}>
-              <div className={style.frontSide}>
-                <img className={style.img} src={iconSass} alt="Sass" />
-              </div>
-              <div className={style.backSide}>
-                <p className={style.title}>SASS</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
-    </section>
+    </div>
   );
 };
 
