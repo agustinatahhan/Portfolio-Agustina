@@ -1,9 +1,5 @@
-nav {
-  position: fixed;
+.navbarIdea {
   background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
-  z-index: 3;
-  height: 7.5rem;
-  margin: 0;
 }
 
 .logo {

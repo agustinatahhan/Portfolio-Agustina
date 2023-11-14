@@ -52,10 +52,10 @@ const Nav = () => {
   // };
   
   return (
-    <nav className="navbar navbar-expand-lg bg-tertiary navbar-idea p-3 fixed-top">
-      <div className={`container-fluid d-flex mx-5`}>
+    <nav className={`navbar navbar-expand-lg bg-tertiary p-4 fixed-top ${style.navbarIdea}`}>
+      <div className={`container-fluid d-flex `}>
         <button
-          className={`navbar-toggler menu`}
+          className={`navbar-toggler`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
