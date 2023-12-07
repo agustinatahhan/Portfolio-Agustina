@@ -1,15 +1,8 @@
 .navbarIdea {
   background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
+  margin: 0;
+  padding: 0;
 }
-
-.logo {
-  width: 120px;
-  height: 89px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .links a {
   color: white;
   text-decoration: none;
@@ -142,12 +135,8 @@ input.checkIcon:checked + label.iconMenu {
   color: #333;
 }
 
-  @media (max-width: 767px) {
-    .nn {
-      width: 100%;
-      background: linear-gradient(to top,  #ddb6d8, #d0a6cf);
-
-    }
+@media (max-width: 767px) {
+  .navbar.fixed-top {
+    position: relative; /* O elimina fixed-top en dispositivos móviles */
   }
-
-
+}

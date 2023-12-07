@@ -53,7 +53,7 @@ const Nav = () => {
   
   return (
     <nav className={`navbar navbar-expand-lg bg-tertiary p-4 fixed-top ${style.navbarIdea}`}>
-      <div className={`container-fluid d-flex `}>
+      {/* <div className={`container-fluid d-flex `}> */}
         <button
           className={`navbar-toggler`}
           type="button"
@@ -130,7 +130,7 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-      </div>
+      {/* </div> */}
     </nav>
   );
 };
