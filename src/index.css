@@ -36,7 +36,15 @@ a {
 
 section{
   position: relative;
-  /* width: 100vw;
-  height: 100vh; */
+  width: 100vw;
+  height: 100vh;
 }
 
+@media (max-width: 480px) {
+  section{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
+  
+}

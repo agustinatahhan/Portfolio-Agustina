@@ -257,7 +257,7 @@
 //               disabled={endIndex >= cardData.length}
 //               className={style.btnPag}
 //             ><span className={style.spanBtn}>Next</span>
-              
+
 //               <svg
 //                 xmlns="http://www.w3.org/2000/svg"
 //                 className="icon icon-tabler icon-tabler-arrow-narrow-right"
@@ -288,8 +288,8 @@
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import style from "./Projects.module.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useTranslation } from "react-i18next";
 import sportiverse from "../../assets/sportiverse.png";
 import pokemon from "../../assets/pokemon.png";
@@ -305,6 +305,7 @@ const Projects = () => {
 
   const sportiverseLink = "https://sportiverse-client.onrender.com/";
   const m4lifeLink = "https://m4life-six.vercel.app/";
+  const pokemonLink = "https://github.com/agustinatahhan/Pi-Pokemon";
 
   return (
     <div
@@ -312,8 +313,13 @@ const Projects = () => {
       id="projects"
     >
       <div className="container">
-        <h2 data-aos="fade-right" className={`text-center my-5 display-5 ${style.title}`}>{t("projects.project_title")} </h2>
-        <div  data-aos="flip-up" className="row row-cols-1 row-cols-md-2 g-4">
+        <h2
+          data-aos="fade-right"
+          className={`text-center my-5 display-5 ${style.title}`}
+        >
+          {t("projects.project_title")}{" "}
+        </h2>
+        <div data-aos="flip-up" className="row row-cols-1 row-cols-md-2 g-4">
           <div className="col">
             <NavLink to={sportiverseLink}>
               <div className="card">
@@ -330,13 +336,15 @@ const Projects = () => {
             </NavLink>
           </div>
           <div className="col">
-            <div className="card">
-              <img src={pokemon} className="card-img-top" alt="pokemon" />
-              <div className="card-body">
-                <h5 className="card-title">Pokémon</h5>
-                <p className="card-text">{t("projects.pokemon_card")}</p>
+            <NavLink to={pokemonLink}>
+              <div className="card">
+                <img src={pokemon} className="card-img-top" alt="pokemon" />
+                <div className="card-body">
+                  <h5 className="card-title">Pokémon</h5>
+                  <p className="card-text">{t("projects.pokemon_card")}</p>
+                </div>
               </div>
-            </div>
+            </NavLink>
           </div>
           <div className="col">
             <NavLink to={m4lifeLink}>
@@ -362,6 +370,6 @@ const Projects = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Projects;

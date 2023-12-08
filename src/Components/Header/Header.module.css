@@ -115,33 +115,33 @@
  @media (max-width: 469px) {
   
   .textContent.full h2 {
-    font-size: 23px;
+    font-size: 18px;
     color: rgb(234, 206, 234);
     margin-top: 1rem;
   }
 
   .textContent.full h3 {
-    font-size: 40px;
+    font-size: 25px;
     line-height: 1;
   }
 
   .textContent.full h2,
   .textContent.full h3 {
-    width: 90%;
+    width: 80%;
     
   }
 
   .header::before {
-    background: url(../../assets/bbbgpcel.jpg);
+    background: url(../../assets/bgres.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* width: 100%; */
+    width: 100%;
   }
- 
+  .cta {
+    display: none;
+   }
+   
 }
 
-@media (max-width: 320px){
-     
-}

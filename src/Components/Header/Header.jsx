@@ -4,6 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   const [t] = useTranslation("global");
 
@@ -58,7 +60,7 @@ const Header = () => {
     //     </div>
     //   </section>
 
-    <section
+    <div
       className={`min-vh-100 d-flex align-items-center justify-content-center ${style.header}`}
       id="home"
     >
@@ -70,18 +72,18 @@ const Header = () => {
               <h3>{t("header.hi_there")}</h3>
               <h3>{t("header.name")}</h3>
               <h2>{t("header.career")}</h2>
-              <a href="#footer" className={`btn ${style.cta}`}>
+              <NavLink to="/contact" className={`btn ${style.cta}`}>
                 <span>Contact Me</span>
                 <svg viewBox="0 0 13 10" height="10px" width="15px">
                   <path d="M1,5 L11,5"></path>
                   <polyline points="8 1 12 5 8 9"></polyline>
                 </svg>
-              </a>{" "}
+              </NavLink>{" "}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

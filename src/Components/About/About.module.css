@@ -1,6 +1,7 @@
-.about{
+.about {
   background: rgb(235, 229, 235);
   background: rgb(246, 242, 246);
+  height: 100vh;
 
   /* background: #000000b9; */
 }
@@ -45,10 +46,9 @@
   grid-column: span 8;
   align-self: center;
   justify-self: center;
-  
 }
 
-.span10{
+.span10 {
   grid-column: span 10;
 }
 
@@ -56,20 +56,17 @@
   padding: 0 50px;
 }
 
-.cardItem{
-max-width: auto;
-padding: 1rem;
-/* background-color: #fff; */
-border-radius: 10px;
-/* border: .2px solid rgba(94, 92, 92, 0.091); */
-/* box-shadow: 30px 30px 30px rgba(0, 0, 0, .05); */
-margin: 1rem 0;
+.cardItem {
+  max-width: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
 }
 
 .title {
   font-weight: 600;
   color: rgb(31 41 55);
-  margin: .4rem 0;
+  margin: 0.4rem 0;
   letter-spacing: 3px;
   /* color: white; */
 }
@@ -84,36 +81,40 @@ margin: 1rem 0;
 }
 
 @media (max-width: 1023px) {
-    .grid{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  .about {
+    height: fit-content;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .about div .background {
-      background: url(../../assets/agusbw.jpg);
-      width: 15rem;
-      height: 15rem;
-      justify-self: center;
-      align-self: center;
-      margin: 1rem 0;
-      
-    }
+  .about div .background {
+    background: url(../../assets/agusbw.jpg);
+    width: 12rem;
+    height: 12rem;
+    justify-self: center;
+    align-self: center;
+    margin: 1rem 0;
+  }
 
-    .about.grid{
-      gap: 1rem;
-    }
+  .about.grid {
+    gap: 1rem;
+  }
 
-    .textContent.lateral h3 {
-      font-size: 20px;
-      font-weight: 600;
-      text-align: center;
-      margin: .5rem 0 0 0;
-    }
-    .textContent.lateral p{
-      text-align: center;
-    }
-  
-    
+  .textContent.lateral h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+  }
+  .textContent.lateral p {
+    text-align: center;
+  }
+
+  .description {
+    font-size: 12px;
+  }
 }
