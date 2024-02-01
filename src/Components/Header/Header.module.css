@@ -132,7 +132,7 @@
   }
 
   .header::before {
-    background: url(../../assets/bbbgpcel.avif);
+    background: url(../../assets/bbbgpcel.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
